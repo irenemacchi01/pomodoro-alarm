@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="timer">
+      
+        <div>
+          <svg width="450" height="150">
+            <path id="curve" d="M 0 120 C 0 120, 200 0, 450 120"></path>
+            
+            <text class="text" text-anchor="middle">
+              <textPath class="text__path" href="#curve" startOffset="50%">POMODORO</textPath>
+            </text>
+          </svg>
+        </div>
+
+        <div class="display">00:00</div>
+
+          <div class="btn-group">
+            <div class="column">
+              <button class="btn" id="increaseBtn">+</button>
+              <button class="btn" id="startBtn">AVVIA</button>
+            </div>
+            <div class="column">
+              <button class="btn" id="decreaseBtn">-</button>
+              <button class="btn" id="pauseBtn">PAUSA</button>
+            </div>
+          </div>
+      </div>     
+       
+  <audio id="alarm" src="sound/alarm.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

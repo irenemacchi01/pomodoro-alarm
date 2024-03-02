@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+body {
+    background-image: url('img/bg2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Titan One", sans-serif;
+    letter-spacing: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  #curve {
+    fill: transparent;
+  }
+
+  .text {
+    font-size: 60px;
+    fill: #E6412A;
+  }
+  
+  .timer {
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+  }
+  
+  .display {
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+    margin: 30px 0;
+    -webkit-text-stroke: 3px #E6412A;  
+  }
+  
+  .btn {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100px;
+    padding: 10px 0;
+    margin: 10px; 
+    background-color: #E6412A;
+    border-color: #E6412A;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    color: #e6402ae5;
+    background-color: #e6402acc;
+    border-color: #e6402acc;
+  }
+  
+  .btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-group .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+/* RESPONSIVE MOBILE */
+
+@media screen and (max-width: 768px) {
+
+  .text {
+      font-size: 40px;
+  }
+
+  .display {
+      font-size: 40px;
+  }
+
+  .btn {
+      font-size: 16px;
+      width: 80px;
+      padding: 8px 0;
+  }
+}
